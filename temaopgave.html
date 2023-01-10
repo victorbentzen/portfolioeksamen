@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="visprojekt" lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Temaopgave</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <button onclick="topFunction()" id="pilop" title="op">&#x21ee;</button>
+
+    <header class="header">
+      <a href="index.html"> <img src="images/logo.png" alt="logo" id="logo" /></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">FORSIDE</a></li>
+        <li><a href="index.html#cases-undertitle">PROJEKTER</a></li>
+        <li><a href="ommig.html">OM MIG</a></li>
+      </ul>
+    </header>
+    <main>
+      <img src="images/temafire-hero.png" alt="fremvisning" class="temafire-hero" />
+
+      <div class="grid_1-1">
+        <div id="ssp1">
+          <h3 id="minpc-t">Tema 4 - case 04.04.01</h3>
+          <h1 id="minpc-tt">Temaopgave</h1>
+          <h3>Min rolle</h3>
+          <h4>Programmør <br />Grafisk Designer<br />UX Designer<br />Konceptudvikler</h4>
+          <h3>Programmer brugt</h3>
+          <h4>Visuel Studio Code <br />Adobe Illustrator</h4>
+          <h3>URL</h3>
+          <h4>https://benzedia.dk/T4/website/easteregghunt.html</h4>
+          <p>
+            Idéfasen startede ud med <span class="strong">research</span> og <span class="strong">brainstorm</span> af hhv. stilarter og papirprototyper, for at få en idé af, hvordan spillet skulle udforme sig. Efter en masse stil-inspiration, blev
+            stilarten <span class="strong">flat design</span> valgt, som er et minimalistisk design med todimensionelle elementer, der er iøjnefaldende for forbrugeren. <br />Spilkonceptet blev opfundet efter flere overvejelser og endte med at være
+            et påskespil, hvor man skulle hjælpe påskeharen med at få påskeæg og -harer ned til børnene ved at klikke bomberne væk. For at beskrive spillet blev der udarbejdet et aktivitetsdiagram, der fungerer som et rutediagram, der viser spillets
+            proces og hvordan spillet skal spilles for at man enten vinder eller taber.
+            <br />
+            <br />
+          </p>
+          <hr />
+          <p class="t2-underp">
+            Med spilkonceptet på plads begyndte <span class="strong">rentegningen</span> af figurer, elementer, baggrundsdesign og titelskærme. Her var der fokus på
+            <span class="strong">formgivnings- og kompositionsprincipper, baggrundsdesign, atmosfærisk perspektiv, linjer, kontraster, focal point.</span> Til at designe mine figurer skulle principperne om karakterdesign overholdes. Flat Design
+            figurer indeholder principper som bl.a. høj pande, store runde øjne, stort hoved, runde kanter og få steder benyttes der skygge og højglans med minimalt brug af tekstur.<br /><br />
+            Farvemæssigt er der valgt lyse, skarpe farver til baggrundsdesignet, figurer og UI-elementer, som komplementære påske-temaet - derimod er der blevet brugt mørke, dystre farver til at designe de onde figurer, UI-elementer og Game
+            Over-skærmen, som samtidig er skabt af <span class="strong">kiki</span> (<em>spidse former</em>) træk. Alle gode elementer er skabt af <span class="strong">bouba</span> (<em>bløde former</em>) som indikerer påske-temaet og skaber en form
+            for harmoni, der har en god effekt for spilleren og spillet.
+
+            <br />
+            <br />Alt rentegning og farvelægning er foretaget i <span class="strong">Adobe Illustrator</span>, hvor fokuset var at tegne simple former og med få punkter. Baggrundene, de forskellige UI-elementer og -figurer skulle efterfølgende
+            eksporteres enkeltvist, så de kunne styles, og i et SVG-format.
+            <br />
+            <br />
+          </p>
+          <hr />
+        </div>
+        <div id="ssp2">
+          <div class="easter-game">
+            <img src="images/eastergame.gif" alt="spilvisning" />
+          </div>
+          <p>
+            Til at implementere spillet blev koden først bygget op med HTML og dernæst CSS til at positionere baggrunden og placering af de interaktive UI-elementer. Efterfølgende skulle spillet animeres med CSS ved hjælp af
+            <span class="strong">CSS transform og -keyframes</span>, der gjorde det muligt at få UI-elementerne til at rotere sig om en bestemt akse og bevæge sig i vertikale baner. <br /><br />
+
+            Herefter blev vi introduceret til <span class="strong">javaScript</span>, hvor der skulle benyttes <span class="strong">document.querySelector</span> for at kunne interagere med det specifikke HTML-element, hvor det efterfølgende var
+            muligt at trigger en ny funktion, afhængigt af et givent event, ved brug af <span class="strong">addEventListener</span> - som for eksempel gjorde det muligt for spilleren at klikke på spilelementerne. <br />Ved at tilføje funktionen
+            <span class="strong">add</span> kunne spilleren få point for klikket og ved at tilføje triggeren <span class="strong">print</span>, kunne spilleren se sine point. Hvis spilleren ikke formåede at klikke på bomben, inden den ramte børnene,
+            blev koden lose triggered og spilleren mister et liv, som ved brug af print også kunne ses. Ved at implementere <span class="strong">if-statement</span>, kunne spilleren, ved igen brug af addEventListener, komme til Vind-skærmen, hvis
+            tiden var gået - og ellers komme til Game Over-skærmen, hvis 3 bomber havde ramt børnene.
+          </p>
+        </div>
+      </div>
+      <img src="images/temafire-display.png" alt="Game display" class="temafire-display" />
+      <h1 id="temato1-afslut">Tjek det ud.</h1>
+      <div class="link_site">
+        <a href="https://benzedia.dk/T4/website/easteregghunt.html" class="knap">Spil Easter Egg Hunt</a>
+      </div>
+    </main>
+    <footer>
+      <script src="pilop.js"></script>
+      <img src="images/globalfooter.png" alt="footer logo" id="footerlogo" />
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="visprojekt" lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Pitch</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <button onclick="topFunction()" id="pilop" title="op">&#x21ee;</button>
+
+    <header class="header">
+      <a href="index.html"> <img src="images/logo.png" alt="logo" id="logo" /></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">FORSIDE</a></li>
+        <li><a href="index.html#cases-undertitle">PROJEKTER</a></li>
+        <li><a href="ommig.html">OM MIG</a></li>
+      </ul>
+    </header>
+    <main>
+      <img src="images/tematre2-hero.png" alt="fremvisning" class="tematre2-hero" />
+      <div class="grid_1-1">
+        <div id="ssp1">
+          <h3 id="minpc-t">Tema 3 - case 03.03.02</h3>
+          <h1 id="minpc-tt">Pitch</h1>
+          <h3>Min rolle</h3>
+          <h4>Grafisk Designer</h4>
+          <h3>Programmer brugt</h3>
+          <h4>
+            Microsoft Powerpoint <br />Adobe Photoshop <br />
+            Adobe XD
+          </h4>
+          <h3>URL</h3>
+          <h4>https://studkea-my.sharepoint.com/:p:/g/personal/vict656m_stud_kea_dk/ESf2VSgRyDlNi-bKjIFt-zIBoHjI12oeVQrG3ioD3S8R4Q?e=vCsSeV</h4>
+          <br />
+          <br />
+        </div>
+        <div id="ssp2">
+          <h3 class="projekt-tt">Projekt</h3>
+          <p>
+            Som afslutning på <span class="strong"><em>UX Løsning (opgave 03.02.02)</em></span> blev sitet pitchet ved brug af et PowerPoint slideshow. Pitchen kom omkring resultater fra research, virksomhedspræsentation, præsentation af prototypen,
+            konklusioner og afslutningsvis blev der perspektiveret til, hvad der kunne have været gjort anderledes.
+          </p>
+        </div>
+      </div>
+      <h1 id="temato1-afslut">Tjek det ud.</h1>
+      <div class="slideshow-container-arrow">
+        <div class="Slide fade">
+          <div class="numbertext">1 / 10</div>
+          <img src="images/p1.png" style="width: 100%" alt="slide1" />
+        </div>
+
+        <div class="Slide fade">
+          <div class="numbertext">2 / 10</div>
+          <img src="images/p2.png" style="width: 100%" alt="slide2" />
+        </div>
+
+        <div class="Slide fade">
+          <div class="numbertext">3 / 10</div>
+          <img src="images/p3.png" style="width: 100%" alt="slide3" />
+        </div>
+
+        <div class="Slide fade">
+          <div class="numbertext">4 / 10</div>
+          <img src="images/p4.png" style="width: 100%" alt="slide4" />
+        </div>
+
+        <div class="Slide fade">
+          <div class="numbertext">5 / 10</div>
+          <img src="images/p5.png" style="width: 100%" alt="slide5" />
+        </div>
+
+        <div class="Slide fade">
+          <div class="numbertext">6 / 10</div>
+          <img src="images/p6.png" style="width: 100%" alt="slide6" />
+        </div>
+
+        <div class="Slide fade">
+          <div class="numbertext">7 / 10</div>
+          <img src="images/p7.png" style="width: 100%" alt="slide7" />
+        </div>
+
+        <div class="Slide fade">
+          <div class="numbertext">8 / 10</div>
+          <img src="images/p8.png" style="width: 100%" alt="slide8" />
+        </div>
+
+        <div class="Slide fade">
+          <div class="numbertext">9 / 10</div>
+          <img src="images/p9.png" style="width: 100%" alt="slide9" />
+        </div>
+
+        <div class="Slide fade">
+          <div class="numbertext">10 / 10</div>
+          <img src="images/p10.png" style="width: 100%" alt="slide10" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("Slide");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex - 1].style.display = "block";
+        }
+      </script>
+      <div class="link_site">
+        <a href="https://www.benzedia.dk/t2/website/pages/index.html" class="knap">Besøg Benzedia</a>
+      </div>
+    </main>
+    <footer>
+      <script src="pilop.js"></script>
+      <img src="images/globalfooter.png" alt="footer logo" id="footerlogo" />
+    </footer>
+  </body>
+</html>

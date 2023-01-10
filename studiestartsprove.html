@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="visprojekt" lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Studiestartsprøven</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <button onclick="topFunction()" id="pilop" title="op">&#x21ee;</button>
+
+    <header class="header">
+      <a href="index.html"> <img src="images/logo.png" alt="logo" id="logo" /></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">FORSIDE</a></li>
+        <li><a href="index.html#cases-undertitle">PROJEKTER</a></li>
+        <li><a href="ommig.html">OM MIG</a></li>
+      </ul>
+    </header>
+    <main>
+      <img src="images/temato1-hero3.png" alt="fremvisning" class="temato1-hero" />
+      <div class="grid_1-1">
+        <div id="ssp1">
+          <h3 id="minpc-t">Tema 2 - case 02.01.02</h3>
+          <h1 id="minpc-tt">Studiestartsprøven</h1>
+          <h3>Min rolle</h3>
+          <h4>Programmør <br />Grafisk Designer</h4>
+          <h3>Programmer brugt</h3>
+          <h4>Visuel Studio Code <br />Adobe Photoshop</h4>
+          <h3>URL</h3>
+          <h4>https://www.benzedia.dk/t2/website/pages/index.html</h4>
+          <p>
+            For at danne et overskueligt overblik over opgaven, blev der først og fremmest taget udgangspunkt i det udleverede wireframe og efterfølgende blev HTML-strukturens elementer sat op på de 5, forskellige HTML-sider med parent og children ud
+            fra layoutdiagrammet.<br />
+            <br />Der blev taget udgangspunkt i wireframen, som er en hurtig, visuel skitse eller repræsentation af den oprindelige idé, hvor der var fortalt hvilke tekst-(header-tags og paragraphs) og billedelementer (images), der skulle inddrages i
+            de forskellige containers. <br />
+            <br />
+          </p>
+          <hr />
+          <p class="t2-underp">
+            Med ovenstående udgangspunkt blev der opsat et simpelt website i HTML, som efterfølgende blev stylet med CSS, som er et assisterede sprog til HTML og er et såkaldt stylesheet/typografiark, så den tilpassede sig efter det udleverede
+            layoutdiagram. CSS blev brugt til bl.a. grid, flex, farver og fonte. <br /><br />For lave et responsivt design, blev der anvendt <span class="strong">@media</span> (media queries) i CSS til at style de forskellige elementer, så sitet
+            opførte sig responsivt i webversionen såvel som en mobilversion. For at websitet ikke kunne indekseres af søgemaskiner, blev meta-tagget "<em>meta name="robots" content="noindex"</em> anvendt i head-elementet.
+          </p>
+          <hr />
+          <p class="t2-underp">
+            Efterfølgende skulle der tages udgangspunkt i websitets visuelle udtryk. Der blev valgt en lys, beige farve navigationsmenuen så den komplementære websitets hvide baggrund. Til at komprimere billederne til et websafe format blev der
+            anvendt <span class="strong">Adobe Photoshop</span>, så billederne fylder så lidt som muligt, men stadig opnår den bedst mulige kvalitet. Det er blandt andet medvirkende til at websitet loader hurtigere. <br /><br />Afslutnigsvist blev
+            siden valideret efter W3C’s anvisninger, opsat i et struktureret mappehierarki og uploadet til et personligt domæne på FileZilla.
+          </p>
+        </div>
+        <div id="ssp2">
+          <h3 class="projekt-tt">Projekt</h3>
+          <p>
+            Til studiestartsprøven var opgaven at udvikle et responsivt website, der bestod af 5 sider og som skulle indeholde det tekst og de billeder, der blev udleveret, følge de <span class="strong">wireframes</span> og opsættes efter de
+            <span class="strong">layout diagrammer</span>, som hørte til opgaven. Til opgaven skulle der udarbejdes to <span class="strong">CSS</span> dokumenter - ét dokument til styling og ét dokument til layout. Det var et krav at siden kunne
+            valideres uden fejl og at den ikke kunne indekseres af søgemaskiner, hvilket var muligt ved at benytte meta-tagget <em>meta name="robots" content="noindex"</em>.<br /><br />Opgaven blev udarbejdet med en mobile-first tilgang og ved brug
+            af <span class="strong">css grid, flex og media queries</span> – der er fælles for et responsivt site.
+          </p>
+          <img src="images/temato1-display.png" alt="display" class="temato1-display" />
+        </div>
+      </div>
+      <img src="images/temato1-phone.png" alt="phone screen" class="temato1-phone" />
+      <h1 id="temato1-afslut">Tjek det ud.</h1>
+      <div class="link_site">
+        <a href="https://www.benzedia.dk/t2/website/pages/index.html" class="knap">Besøg Benzedia</a>
+      </div>
+    </main>
+    <footer>
+      <script src="pilop.js"></script>
+      <img src="images/globalfooter.png" alt="footer logo" id="footerlogo" />
+    </footer>
+  </body>
+</html>

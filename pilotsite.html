@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="visprojekt" lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Pilotsite</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <button onclick="topFunction()" id="pilop" title="op">&#x21ee;</button>
+    <header class="header">
+      <a href="index.html"> <img src="images/logo.png" alt="logo" id="logo" /></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">FORSIDE</a></li>
+        <li><a href="index.html#cases-undertitle">PROJEKTER</a></li>
+        <li><a href="ommig.html">OM MIG</a></li>
+      </ul>
+    </header>
+    <main>
+      <img src="images/temafem1-hero.png" alt="fremvisning" class="temafem1-hero" />
+      <div class="grid_1-1">
+        <div id="ssp1">
+          <h3 id="minpc-t">Tema 5 - case 05.01.02</h3>
+          <h1 id="minpc-tt">Pilotsite</h1>
+          <h3>Min rolle</h3>
+          <h4>Programmør <br />Videograf</h4>
+          <h3>Programmer brugt</h3>
+          <h4>Visuel Studio Code <br />Adobe Premiere Pro<br />Adobe Audition</h4>
+          <h3>URL</h3>
+          <h4>https://benzedia.dk/t5/pilotsite/index.html</h4>
+          <p>
+            Til postproduktionen blev der arbejdet i <span class="strong">Premiere Pro</span>, hvor første fokus var at udvælge bestemte udsnit fra interviewet, som havde mest relevans og samtidig redigere lyden, så der var fra en flydende overgang
+            mellem klippene. For at lydkvalitet fremstod så ren som overhovedet muligt blev <span class="strong">DeNoise</span> effekten anvendt, som er et støjreduktion filter. Under selve interviewet blev der anvendt 4 b-rolls, der blev filmet fra
+            forskellige framings, for at gøre videoen mere dynamisk og for at fastholde seerens opmærksomhed. <br />B-rolls fungerer som dækbilleder eller supplerende optagelser og bruges til at forklare eller demonstrere et bestemt emne for at
+            understøtte forklaringen. <br />
+            <br />
+            For at skabe en iøjnefaldende intro blev der arbejdet med <span class="strong">motion graphics</span>, for at gøre titlen levende frem for statisk. Til at gøre dette blev titlen først og fremmest duplikeret to gange, placeret på to
+            forskellige layers og lavet om til stroke tekst. Efterfølgende blev der lavet om i tekstens tidslinje ved brug af <span class="strong">transform</span> og ved at gøre brug af <span class="strong">mask tool</span> blev teksten redigeret
+            bag Simon, som nu fremstod i en 3D-effekt.<br /><br />
+            Som musik til videoen blev der anvendt rettighedsfrit musik og gjort brug af effekterne <span class="strong">constant gain</span> og <span class="strong">exponential fade</span>, for at gøre starten og slutningen af musikken mere
+            flydende, så den ikke starter og slutter brat.<br /><br />
+          </p>
+          <hr />
+          <p class="t2-underp">
+            Som afslutning på Pilotsite-opgaven skulle der udarbejdes et website, hvor videoen kunne præsenteres. På sitet blev der implementeret 6 stillfotos. Den første del af sitet består af et stort baggrundsbillede af informanten, med hans navn
+            og en tilhørende personkarakteristik. På den måde ved læseren, hvad og hvem siden omhandler. <br />Den globale menu på sitet har 4 menupunkter. 3 af disse punkter sender læseren ned til en bestemt sektion på sitet, ved brug af
+            <span class="strong">HTML anchor-points</span>, det fjerde menupunkt sender læseren til en side, hvor vedkommende kan se sidens layoutdiagram.
+
+            <br /><br />Yderligere er der implementeret et portræt-, tre bredformat- og et højformat billede. Billederne består af skud fra interviewet, B-rolls og et billede fra lokationen. <br />Sidst på sitet er videoen implementeret på to
+            forskellige måder. Den første video er et YouTube-embed, som linker direkte op den uploadede YouTube-video. Den anden, og sidste video, er embedded ved brug af HTML og stylet med CSS. For at kunne kontrollere videoen er der anvendt
+            javaScript til at implementere interaktive play-, pause- og stopknapper. <br />Knapperne er koden med addEventListeners, der med et ‘click’-event enten starter play/pause-funktionen eller stop-funktionen med if-statements. <br />
+            <br />
+          </p>
+        </div>
+        <div id="ssp2">
+          <h3 class="projekt-tt">Projekt</h3>
+          <p>
+            Til Pilotsittet var der til opgave at producere en lille film på 1 minute, der skulle indeholde et interview af en person, der berettede om en passion. Til opgaven arbejdede vi med Simon Bang, der er medstifter af Copenhagen Grooming. Der
+            blev udarbejdet en interviewguide, som indeholdt en produktionsplan, hvor der blev redegjort for hvordan interviewet og <span class="strong">B-rolls</span> skulle filmes, og selve spørgsmålene til interviewet.
+
+            <br /><br />Der blev optaget et længerevarende interview, hvor princippet <span class="strong">rule of thirds</span> blev benyttet samtidig med at der var luft over informantens hovede og tale-/blikretning. I forhold til establishing shot
+            blev der filmet ud fra et Mid shot framing, hvilket vil sige, at omkring halvdelen af kroppen var inkluderet i billedet.<br /><br />
+          </p>
+          <hr />
+        </div>
+      </div>
+      <h1 id="temato1-afslut">Tjek det ud.</h1>
+      <div class="video">
+        <div id="video_box">
+          <video id="video_file" src="images/Oneminutewonder_Simon01.mp4"></video>
+          <div id="controls">
+            <div id="play"></div>
+            <div id="stop"></div>
+          </div>
+        </div>
+      </div>
+      <div class="link_site">
+        <a href="https://youtu.be/15LJxb2NUVM" class="knap">Se YouTube version</a>
+      </div>
+    </main>
+    <footer>
+      <script src="portfolio.js"></script>
+      <script src="pilop.js"></script>
+      <img src="images/globalfooter.png" alt="footer logo" id="footerlogo" />
+    </footer>
+  </body>
+</html>
